@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicina Natural Salud y Bienestar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header class="bg-success text-white py-4">
+        <div class="container">
+            <h1>Medicina Natural Salud y Bienestar</h1>
+            <!-- Menú hamburguesa -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#acercaDeModal"><i class="fas fa-info-circle"></i> Acerca de</a></li>
+                    <li class="nav-item"><a class="nav-link" href="MedicinaNatural.html"><i class="fas fa-leaf"></i> Medicina Natural</a></li>
+                    <li class="nav-item"><a class="nav-link" href="producto.html"><i class="fas fa-shopping-basket"></i> Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactos.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="py-5">
+            <div class="container bg-white p-5 shadow">
+                <h2 class="mb-4">Bienvenido a Medicina Natural Salud y Bienestar</h2>
+                <p>Descubre cómo la medicina natural puede ayudarte a mejorar tu salud y bienestar. Aquí encontrarás información sobre las prácticas más efectivas, consejos para una vida saludable, y productos naturales de alta calidad.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-info">
+                <p><strong>Dirección:</strong> Av. Salud 123, Ciudad del Bienestar, País Saludable</p>
+                <p><strong>Teléfonos:</strong> +123 456 7890 | +098 765 4321</p>
+                <p><strong>Horarios de Atención:</strong> Lunes a Viernes: 9:00 AM - 6:00 PM | Sábado: 10:00 AM - 2:00 PM</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.facebook.com" target="_blank" class="facebook">Facebook</a>
+                <a href="https://www.instagram.com" target="_blank" class="instagram">Instagram</a>
+                <a href="https://wa.me/1234567890" target="_blank" class="whatsapp">WhatsApp</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Acerca de -->
+    <div class="modal fade" id="acercaDeModal" tabindex="-1" aria-labelledby="acercaDeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background: rgba(255, 255, 255, 0.9);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="acercaDeModalLabel">Acerca de Nosotros</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>En Medicina Natural Salud y Bienestar, nuestro objetivo es promover un estilo de vida saludable a través de prácticas de medicina natural efectivas y accesibles. Fundada en 2015 por la Dra. Marta González, nuestra misión es ofrecer soluciones integrales para el cuidado de la salud.</p>
+                    <p>La Dra. González, con más de 20 años de experiencia en el campo de la medicina alternativa, decidió crear este emprendimiento con la visión de proporcionar una alternativa natural a los tratamientos convencionales. Su pasión por las plantas medicinales y la medicina tradicional la llevó a fundar nuestro centro, donde combinamos conocimientos ancestrales con las últimas investigaciones en salud natural.</p>
+                    <h3>Nuestra Historia</h3>
+                    <p>La historia de Medicina Natural Salud y Bienestar comienza en un pequeño jardín en la casa de la Dra. González, donde comenzó a cultivar sus propias hierbas medicinales. A medida que sus conocimientos y habilidades crecían, decidió compartir su pasión con la comunidad.</p>
+                    <p>Hoy en día, contamos con un espacio dedicado al bienestar, donde ofrecemos consultas, talleres y una variedad de productos naturales para ayudarte a alcanzar tus objetivos de salud.</p>
+                    <h3>Nuestra Ubicación</h3>
+                    <p><strong>Dirección:</strong> Av. Salud 123, Ciudad del Bienestar, País Saludable</p>
+                    <p>¡Ven a visitarnos y descubre todo lo que tenemos para ofrecerte!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón para desplazarse hacia arriba -->
+    <button onclick="topFunction()" id="scrollTopBtn" title="Ir arriba" class="btn btn-success">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover();
+        });
+
+        // Botón de desplazamiento hacia arriba
+        var mybutton = document.getElementById("scrollTopBtn");
+
+        window.onscroll = function() {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>

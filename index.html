@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicina Natural Salud y Bienestar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    </body>
+
+    <script src="Javascript/carrito.js"></script>
+    <script src="Javascript/index.js"></script>
+    <script src="Javascript/productos.js"></script>
+    <script src="Javascript/contactos.js"></script>
+    
+</head>
+
+<body>
+    <header class="bg-success text-white py-3 fixed-top shadow">
+        <div class="container d-flex align-items-center justify-content-between">
+            <h1 class="h3 mb-0">Medicina Natural Salud y Bienestar</h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav ml-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="#"><i class="fas fa-home"></i> Inicio</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#" data-toggle="modal"
+                            data-target="#acercaDeModal"><i class="fas fa-info-circle"></i> Acerca de</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#" data-toggle="modal"
+                            data-target="#medicinaNaturalModal"><i class="fas fa-leaf"></i> Medicina Natural</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#" data-toggle="modal"
+                            data-target="#productoModal"><i class="fas fa-shopping-basket"></i> Productos</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#" data-toggle="modal"
+                            data-target="#contactoModal"><i class="fas fa-envelope"></i> Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#" data-toggle="modal"
+                            data-target="#carritoModal"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/imagen1.jpg" class="d-block w-100" alt="Medicina Natural">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Bienvenido a Medicina Natural</h5>
+                    <p>Descubre el poder de la naturaleza.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/imagen2.jpeg" class="d-block w-100" alt="Salud y Bienestar">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Salud y Bienestar</h5>
+                    <p>Mejora tu vida con nuestros consejos.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/imagen3.jpg" class="d-block w-100" alt="Productos Naturales">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Productos Naturales</h5>
+                    <p>Encuentra productos de alta calidad.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+
+    <main class="main-content">
+        <section id="inicio" class="py-5">
+            <div class="container bg-white-transparent p-5 shadow">
+                <h2 class="mb-4">Bienvenido a Medicina Natural Salud y Bienestar</h2>
+                <p>Descubre cómo la medicina natural puede ayudarte a mejorar tu salud y bienestar. Aquí encontrarás
+                    información sobre las prácticas más efectivas, consejos para una vida saludable, y productos
+                    naturales de alta calidad.</p>
+            </div>
+        </section>
+        <section id="testimonios" class="py-5">
+            <div class="container bg-white-transparent p-5 shadow">
+                <h2 class="mb-4 text-center">Testimonios</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="testimonial bg-light p-4 rounded shadow-sm text-center">
+                            <img src="img/testimonio1.avif" alt="Juan Pérez" class="rounded-circle mb-3" width="100"
+                                height="100">
+                            <p>"Los productos naturales han mejorado mi calidad de vida. ¡Altamente recomendado!"</p>
+                            <p class="text-muted">- Juan Pérez</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial bg-light p-4 rounded shadow-sm text-center">
+                            <img src="img/testimonio2.avif" alt="María Gómez" class="rounded-circle mb-3" width="100"
+                                height="100">
+                            <p>"La medicina natural me ha ayudado a encontrar un equilibrio en mi salud."</p>
+                            <p class="text-muted">- María Gómez</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial bg-light p-4 rounded shadow-sm text-center">
+                            <img src="img/testimonio3.avif" alt="Carlos Rodríguez" class="rounded-circle mb-3"
+                                width="100" height="100">
+                            <p>"Excelente atención y productos de calidad."</p>
+                            <p class="text-muted">- Carlos Rodríguez</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-info">
+                    <h5>Contacto</h5>
+                    <p><strong>Dirección:</strong> Av. Salud 123, Ciudad del Bienestar, País Saludable</p>
+                    <p><strong>Teléfonos:</strong> +123 456 7890 | +098 765 4321</p>
+                    <p><strong>Horarios de Atención:</strong> Lunes a Viernes: 9:00 AM - 6:00 PM | Sábado: 10:00 AM -
+                        2:00 PM</p>
+                </div>
+                <div class="col-md-4 footer-social">
+                    <h5>Síguenos</h5>
+                    <a href="https://www.facebook.com/MedicinaNatural43" target="_blank" class="facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/medicina_artesanal34/" target="_blank" class="instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/1234567890" target="_blank" class="whatsapp"><i
+                            class="fab fa-whatsapp"></i></a>
+                </div>
+                <div class="col-md-4 footer-subscription">
+                    <h5>Suscríbete a nuestro boletín</h5>
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Ingresa tu email">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Suscribirse</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col text-center">
+                    <p class="mb-0">&copy; 2023 Medicina Natural Salud y Bienestar. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modales -->
+    <div class="modal fade" id="acercaDeModal" tabindex="-1" aria-labelledby="acercaDeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background: rgba(255, 255, 255, 0.9);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="acercaDeModalLabel">Acerca de Nosotros</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>En Medicina Natural Salud y Bienestar, nuestro objetivo es promover un estilo de vida saludable a
+                        través de prácticas de medicina natural efectivas y accesibles. Fundada en 2015 por la Dra.
+                        Marta González, nuestra misión es ofrecer soluciones integrales para el cuidado de la salud.</p>
+                    <p>La Dra. González, con más de 20 años de experiencia en el campo de la medicina alternativa,
+                        decidió crear este emprendimiento con la visión de proporcionar una alternativa natural a los
+                        tratamientos convencionales. Su pasión por las plantas medicinales y la medicina tradicional la
+                        llevó a fundar nuestro centro, donde combinamos conocimientos ancestrales con las últimas
+                        investigaciones en salud natural.</p>
+                    <h3>Nuestra Historia</h3>
+                    <p>La historia de Medicina Natural Salud y Bienestar comienza en un pequeño jardín en la casa de la
+                        Dra. González, donde comenzó a cultivar sus propias hierbas medicinales. A medida que sus
+                        conocimientos y habilidades crecían, decidió compartir su pasión con la comunidad.</p>
+                    <p>Hoy en día, contamos con un espacio dedicado al bienestar, donde ofrecemos consultas, talleres y
+                        una variedad de productos naturales para ayudarte a alcanzar tus objetivos de salud.</p>
+                    <h3>Nuestra Ubicación</h3>
+                    <p><strong>Dirección:</strong> Av. Naciones Unidas y 10 de agosto</p>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3704.3879617639654!2d-78.48717273840094!3d-0.17549813779428639!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a8fc6584949%3A0x9e52528f5a4d4284!2sAv.%2010%20de%20Agosto%20N37-21%20y%2C%20Quito%20170508!5e0!3m2!1ses-419!2sec!4v1721889205452!5m2!1ses-419!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <p>¡Ven a visitarnos y descubre todo lo que tenemos para ofrecerte!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="medicinaNaturalModal" tabindex="-1" aria-labelledby="medicinaNaturalModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background: rgba(255, 255, 255, 0.9);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="medicinaNaturalModalLabel">Medicina Natural</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Explora las distintas prácticas de la medicina natural que ofrecemos:</p>
+                    <div class="practicas">
+                        <div class="practica">
+                            <h3>Fitoterapia</h3>
+                            <p>Uso de plantas medicinales para tratar diversas afecciones.</p>
+                        </div>
+                        <div class="practica">
+                            <h3>Aromaterapia</h3>
+                            <p>Uso de aceites esenciales para mejorar la salud mental y física.</p>
+                        </div>
+                        <div class="practica">
+                            <h3>Homeopatía</h3>
+                            <p>Tratamientos basados en el principio de que lo similar cura lo similar.</p>
+                        </div>
+                        <div class="practica">
+                            <h3>Acupuntura</h3>
+                            <p>Técnica de inserción de agujas en puntos específicos del cuerpo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="productoModal" tabindex="-1" aria-labelledby="productoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productoModalLabel">Productos</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Descubre nuestra gama de productos naturales:</p>
+                    <div class="productos">
+                        <div class="producto">
+                            <h3>Té de Manzanilla</h3>
+                            <p>Ideal para la digestión y la relajación.</p>
+                            <span>$10.00</span>
+                            <button class="add-to-cart btn btn-primary" data-name="Té de Manzanilla"
+                                data-price="10.00">Agregar al carrito</button>
+                        </div>
+                        <div class="producto">
+                            <h3>Aceite Esencial de Lavanda</h3>
+                            <p>Perfecto para aliviar el estrés y mejorar el sueño.</p>
+                            <span>$15.00</span>
+                            <button class="add-to-cart btn btn-primary" data-name="Aceite Esencial de Lavanda"
+                                data-price="15.00">Agregar al carrito</button>
+                        </div>
+                        <div class="producto">
+                            <h3>Suplemento de Equinácea</h3>
+                            <p>Apoya el sistema inmunológico.</p>
+                            <span>$12.00</span>
+                            <button class="add-to-cart btn btn-primary" data-name="Suplemento de Equinácea"
+                                data-price="12.00">Agregar al carrito</button>
+                        </div>
+                        <div class="producto">
+                            <h3>Pomada de Árnica</h3>
+                            <p>Alivia contusiones y dolores musculares.</p>
+                            <span>$8.00</span>
+                            <button class="add-to-cart btn btn-primary" data-name="Pomada de Árnica"
+                                data-price="8.00">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-success" id="view-cart">Ir al carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="contactoModal" tabindex="-1" aria-labelledby="contactoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background: rgba(255, 255, 255, 0.9);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactoModalLabel">Contacto</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Estamos aquí para ayudarte. Completa el formulario a continuación y nos pondremos en contacto contigo.</p>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico:</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" class="form-control" rows="5" required></textarea>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="carritoModal" tabindex="-1" aria-labelledby="carritoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="carritoModalLabel">Carrito de Compras</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul id="cart-items" class="list-group">
+                        <!-- Items del carrito aquí -->
+                    </ul>
+                    <div id="cart-total" class="mt-3">Total: $0.00</div>
+                </div>
+                <div class="modal-footer d-flex justify-content-between">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <div>
+                        <button type="button" class="btn btn-danger" id="clear-cart">Vaciar carrito</button>
+                        <button type="button" class="btn btn-success ml-2" id="pay-button">Pagar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        <!-- Botón para desplazarse hacia arriba -->
+        <button onclick="topFunction()" id="scrollTopBtn" title="Ir arriba" class="btn btn-success">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+        <script>
+            $(function () {
+                $('[data-toggle="popover"]').popover();
+            });
+
+            // Botón de desplazamiento hacia arriba
+            var mybutton = document.getElementById("scrollTopBtn");
+
+            window.onscroll = function () {
+                scrollFunction();
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+        <!-- JavaScript para manejar el modal de productos y añadir al carrito -->
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const addToCartButtons = document.querySelectorAll('#productoModal .producto .btn');
+
+                addToCartButtons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        const product = button.closest('.producto');
+                        const name = product.querySelector('h3').innerText;
+                        const price = parseFloat(product.querySelector('span').innerText.replace('$', ''));
+
+                        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                        cart.push({ name, price });
+                        localStorage.setItem('cart', JSON.stringify(cart));
+
+                        alert(`${name} ha sido añadido al carrito.`);
+                    });
+                });
+            });
+        </script>
+
+</body>
+</html>

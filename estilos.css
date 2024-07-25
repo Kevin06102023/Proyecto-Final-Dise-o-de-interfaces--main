@@ -1,0 +1,371 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Estilos del encabezado */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li a i {
+    margin-right: 5px;
+}
+
+/* Estilos para el menú hamburguesa */
+.navbar-toggler {
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.navbar-toggler-icon {
+    width: 1.5em;
+    height: 1.5em;
+    background-color: #fff;
+    border-radius: 1px;
+}
+
+.navbar-toggler-icon:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 1px;
+    margin: 0.25rem 0;
+}
+
+/* Estilos del contenido principal */
+main {
+    padding: 2rem 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    border-bottom: 2px solid #5cb85c;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+h3 {
+    margin-top: 1rem;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 2rem;
+}
+
+.practicas, .productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.practica, .producto {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 45%;
+}
+
+.producto span {
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+/* Estilos del formulario */
+form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background: #5cb85c;
+    color: #fff;
+    border: none;
+    padding: 0.7rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #4cae4c;
+}
+
+/* Estilos del pie de página */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .footer-info h5,
+footer .footer-social h5,
+footer .footer-subscription h5 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.footer-info p {
+    margin: 0.5rem 0;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-social a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    display: inline-block;
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.footer-social a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.facebook {
+    background: #3b5998;
+}
+
+.instagram {
+    background: #e4405f;
+}
+
+.whatsapp {
+    background: #25D366;
+}
+
+.footer-subscription .form-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-subscription .form-group input {
+    flex: 1;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+}
+
+.footer-subscription .form-group button {
+    flex-shrink: 0;
+}
+
+@media (max-width: 767px) {
+    footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .footer-info,
+    footer .footer-social,
+    footer .footer-subscription {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Estilos para el carrusel de imágenes */
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.carousel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.carousel-inner, .carousel-item, .carousel-item img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(35, 49, 35, 0.281);
+    z-index: 1;
+}
+
+.carousel-item img {
+    position: relative;
+    z-index: 0;
+}
+
+.main-content {
+    position: relative;
+    z-index: 2;
+    padding-top: 5vh;
+    background: rgba(255, 255, 255, 0.048);
+}
+
+/* Estilos para la sección de testimonios */
+.bg-white-transparent {
+    background: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+}
+
+.testimonial img {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+}
+
+.testimonial {
+    text-align: center;
+}
+
+/* Estilos para el carrito de compras */
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+#cart-items li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+#cart-items li span {
+    font-weight: bold;
+}
+
+#cart-total {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#clear-cart {
+    margin-top: 1rem;
+    background-color: #d9534f;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#clear-cart:hover {
+    background-color: #c9302c;
+}
+
+.add-to-cart {
+    margin-top: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #4cae4c;
+}

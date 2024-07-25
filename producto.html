@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        .card {
+            margin-bottom: 20px;
+        }
+        .add-to-cart {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-success text-white py-4">
+        <div class="container">
+            <h1>Medicina Natural Salud y Bienestar</h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="acercaDe.html"><i class="fas fa-info-circle"></i> Acerca de</a></li>
+                    <li class="nav-item"><a class="nav-link" href="MedicinaNatural.html"><i class="fas fa-leaf"></i> Medicina Natural</a></li>
+                    <li class="nav-item"><a class="nav-link" href="producto.html"><i class="fas fa-shopping-basket"></i> Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactos.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="carrito.html"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="productos">
+            <div class="container">
+                <h2>Productos</h2>
+                <div class="row">
+                    <!-- Producto 1 -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="imagen-producto1.jpg" class="card-img-top" alt="Producto 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Producto 1</h5>
+                                <p class="card-text">Descripción del producto 1.</p>
+                                <p class="card-text"><strong>Precio:</strong> 10.00 EUR</p>
+                                <button class="add-to-cart btn btn-primary" data-id="1" data-name="Producto 1" data-price="10.00">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto 2 -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="imagen-producto2.jpg" class="card-img-top" alt="Producto 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Producto 2</h5>
+                                <p class="card-text">Descripción del producto 2.</p>
+                                <p class="card-text"><strong>Precio:</strong> 15.00 EUR</p>
+                                <button class="add-to-cart btn btn-primary" data-id="2" data-name="Producto 2" data-price="15.00">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto 3 -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="imagen-producto3.jpg" class="card-img-top" alt="Producto 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Producto 3</h5>
+                                <p class="card-text">Descripción del producto 3.</p>
+                                <p class="card-text"><strong>Precio:</strong> 20.00 EUR</p>
+                                <button class="add-to-cart btn btn-primary" data-id="3" data-name="Producto 3" data-price="20.00">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto 4 -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="imagen-producto4.jpg" class="card-img-top" alt="Producto 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Producto 4</h5>
+                                <p class="card-text">Descripción del producto 4.</p>
+                                <p class="card-text"><strong>Precio:</strong> 25.00 EUR</p>
+                                <button class="add-to-cart btn btn-primary" data-id="4" data-name="Producto 4" data-price="25.00">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-info">
+                <p><strong>Dirección:</strong> Av. Salud 123, Ciudad del Bienestar, País Saludable</p>
+                <p><strong>Teléfonos:</strong> +123 456 7890 | +098 765 4321</p>
+                <p><strong>Horarios de Atención:</strong> Lunes a Viernes: 9:00 AM - 6:00 PM | Sábado: 10:00 AM - 2:00 PM</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.facebook.com" target="_blank" class="facebook">Facebook</a>
+                <a href="https://www.instagram.com" target="_blank" class="instagram">Instagram</a>
+                <a href="https://wa.me/1234567890" target="_blank" class="whatsapp">WhatsApp</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="productos.js"></script>
+</body>
+</html>
