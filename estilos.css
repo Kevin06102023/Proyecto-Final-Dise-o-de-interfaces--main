@@ -359,7 +359,7 @@ body, html {
 .add-to-cart {
     margin-top: 10px;
     background-color: #5cb85c;
-    color: white;
+    color: rgb(243, 63, 63);
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 5px;
